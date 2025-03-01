@@ -64,10 +64,14 @@ body {
     border-radius: 10px;
 }
 
-.productContainer .imageContainer img {
+.productContainer .imageContainer .desktopImage {
     height: 550px;
     width: 375px;
     border-radius: 10px 0px 0px 10px;
+}
+
+.productContainer .imageContainer .mobileImage {
+    display: none;
 }
 
 .productContainer .descriptionContainer {
@@ -158,6 +162,68 @@ body {
     font-weight: 500;
     color: var(--white);
 }
+
+@media (max-width: 800px) {
+    .productContainer {
+        width: 375px;
+        height: 700px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .productContainer .imageContainer {
+        width: 375px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .productContainer .imageContainer .desktopImage {
+        display: none;
+    }
+
+    .productContainer .imageContainer .mobileImage {
+        display: block;
+        width: 375px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .productContainer .descriptionContainer {
+        width: 375px;
+        height: 910px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .productContainer .descriptionContainer .description .perfume {
+        font-size: 12px;
+    }
+
+    .productContainer .descriptionContainer .description .title {
+        font-size: 34px;
+        width: 300px;
+    }
+
+    .productContainer .descriptionContainer .description .perfumeDescription {
+        font-size: 14px;
+        width: 295px;
+    }
+
+    .productContainer .descriptionContainer .description .priceContainer {
+        width: 220px;
+    }
+
+    .productContainer .descriptionContainer .description .priceContainer .discount {
+        font-size: 36px;
+    }
+
+    .productContainer .descriptionContainer .description{
+        height: 375px;
+        width: 315px;
+    }
+
+    .productContainer .descriptionContainer .cartButton {
+        width: 315px;
+        height: 50px;
+    }
+  }
 
 
 
