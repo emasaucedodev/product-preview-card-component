@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.fraunces-<uniquifier> {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+} */
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* COLORS */
+
+* {
+    margin: 0;
+}
+
+:root {
+     /* PRIMARY */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    /* NEUTRAL */
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productContainer {
+    width: 750px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.productContainer .imageContainer {
+    width: 370px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.productContainer .imageContainer img {
+    height: 550px;
+    width: 375px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.productContainer .descriptionContainer {
+    width: 375px;
+    height: 550px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.productContainer .descriptionContainer .description {
+    width: 275px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.productContainer .descriptionContainer .perfume{
+    width: 105px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.productContainer .descriptionContainer .title {
+    font-family: "Fraunces", serif;
+    width: 250px;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--black);
+}
+
+.productContainer .descriptionContainer .perfumeDescription {
+    width: 275px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 24px;
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.productContainer .descriptionContainer .priceContainer {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productContainer .descriptionContainer .discount {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--green-500);
+    font-size: 40px;
+}
+
+.productContainer .descriptionContainer .total {
+    font-family: "Montserrat", sans-serif;
+    color: var(--grey);
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.productContainer .descriptionContainer .cartButton {
+    width: 275px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green-500);
+    gap: 10px;
+}
+
+.productContainer .descriptionContainer .cartButton:hover {
+    background-color: var(--green-700);
+    cursor: pointer;
+
+}
+
+.productContainer .descriptionContainer .cartButton .addCart {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
